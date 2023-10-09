@@ -1,5 +1,77 @@
+/* ==========================
+   Reset e Normalizzazione
+   ========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Stili di reset o normalizzazione */
+
+/* ==========================
+   Globale
+   ========================== */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Stili globali che si applicano a tutto il documento */
+
+/* ==========================
+   Commenti di Debugging
+   ========================== */
+/* Commenti utilizzati temporaneamente per il debug */
+
+/* ==========================
+   Componenti
+   ========================== */
+/* Stili per componenti riutilizzabili */
+
+/* ==========================
+   Header
+   ========================== */
+
+
+/* ==========================
+   Navigazione
+   ========================== */
+/* Stili per il menu di navigazione */
+
+/* ==========================
+   Jumbotron
+   ========================== */
+/* Stili per il Jumbotron */
+
+/* Stili per l'header del sito */
+
+/* ==========================
+   Contenuto Principale
+   ========================== */
+
+/* ==========================
+   Sezione piani offerte
+   ========================== */
+/* Stili per sezione piani offerte */
+
+/* ==========================
+   Sezione funzionalità
+   ========================== */
+/* Stili per sezione funzionalità */
+
+/* ==========================
+   Sezione clienti
+   ========================== */
+/* Stili per sezione clienti */
+
+/* ==========================
+   Sezione domande frequenti
+   ========================== */
+/* Stili per sezione domande frequenti */
+
+/* Stili per il contenuto principale della pagina */
+
+/* ==========================
+   Footer
+   ========================== */
+/* Stili per il piè di pagina del sito */
