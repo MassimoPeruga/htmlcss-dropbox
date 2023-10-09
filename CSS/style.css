@@ -29,6 +29,7 @@ button {
     margin: 0;
     background-color: transparent;
     font-family: inherit;
+    font-size: inherit;
     color: inherit;
     text-decoration: none;
     cursor: pointer;
@@ -53,23 +54,36 @@ body {
 /* ==========================
    Componenti
    ========================== */
+.contenitore {
+    margin: 0 auto;
+}
+
 /* Stili per componenti riutilizzabili */
 
 /* ==========================
    Header
    ========================== */
+header {
+    padding-bottom: 108px;
+    font-size: 10.24px;
+}
 
 /* ==========================
    Navigazione
    ========================== */
 
 header nav {
-    height: 80px;
+    height: 53px;
     display: flex;
     justify-content: space-between;
     color: #464646;
-    font-size: 12px;
-    padding: 0 20px;
+    padding: 0 13px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: white;
 }
 
 header nav>div {
@@ -78,25 +92,24 @@ header nav>div {
 }
 
 #logo {
-    width: 127px;
-    margin-right: 40px;
+    width: 83px;
+    margin-right: 26px;
 }
 
 header nav ul {
     display: flex;
-    gap: 40px;
+    gap: 26px;
 }
 
 header nav li {
     display: inline-block;
 }
 
-header nav button {
+header button {
     color: white;
-    padding: 10px 16px;
+    padding: 6px 10px;
     background-color: #0061ff;
-    margin-left: 20px;
-
+    margin-left: 13px;
 }
 
 /* Stili per il menu di navigazione */
@@ -104,6 +117,48 @@ header nav button {
 /* ==========================
    Jumbotron
    ========================== */
+#sfondo {
+    margin-top: 53px;
+    padding-bottom: 15px;
+    background-color: #b4d0e7;
+}
+
+header .contenitore {
+    width: 790px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -65px;
+}
+
+h1 {
+    font-size: 48.83px;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+header .sinistra {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sinistra button {
+    padding: 11px;
+    margin: 23px 0;
+    width: auto;
+}
+
+.sinistra i {
+    margin-top: 37px;
+    font-size: 30px;
+}
+
+header .destra {
+    width: 70%;
+}
+
 /* Stili per il Jumbotron */
 
 /* Stili per l'header del sito */
