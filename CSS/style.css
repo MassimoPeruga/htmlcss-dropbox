@@ -189,6 +189,10 @@ header .destra {
 /* ==========================
    Sezione piani offerte
    ========================== */
+section {
+    width: 658px;
+    margin: 0 auto;
+}
 
 main section .contenitore {
     width: 658px;
@@ -258,7 +262,7 @@ main section .colonne {
     margin: 0;
 }
 
-.sinistra p {
+.colonne .sinistra p {
     margin-top: 36px;
 }
 
@@ -386,6 +390,25 @@ main a {
 /* ==========================
    Sezione funzionalità
    ========================== */
+
+#features {
+    margin-top: 100px;
+}
+
+#features .contenitore {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+#features .contenitore .colonna {
+    width: calc((100% - 72px) / 3);
+}
+
+#features .contenitore .colonna p {
+    margin-top: 26px;
+}
+
 /* Stili per sezione funzionalità */
 
 /* ==========================
