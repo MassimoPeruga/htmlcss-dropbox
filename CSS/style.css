@@ -16,6 +16,10 @@ ul {
     list-style-type: none;
 }
 
+ol {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -42,20 +46,35 @@ button {
    ========================== */
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 10.24px;
 }
 
 /* Stili globali che si applicano a tutto il documento */
 
 /* ==========================
-   Commenti di Debugging
-   ========================== */
-/* Commenti utilizzati temporaneamente per il debug */
-
-/* ==========================
-   Componenti
+   Componenti riutilizzabili
    ========================== */
 .contenitore {
     margin: 0 auto;
+}
+
+button {
+    color: white;
+    padding: 6px 10px;
+    background-color: #0061ff;
+}
+
+hr {
+    width: 20%;
+}
+
+h3 {
+    font-size: 31.25px;
+    margin-bottom: 42px;
+}
+
+button:hover {
+    filter: brightness(1.4);
 }
 
 /* Stili per componenti riutilizzabili */
@@ -65,7 +84,6 @@ body {
    ========================== */
 header {
     padding-bottom: 108px;
-    font-size: 10.24px;
 }
 
 /* ==========================
@@ -93,23 +111,24 @@ header nav>div {
 
 #logo {
     width: 83px;
-    margin-right: 26px;
+    margin-right: 13px;
 }
 
 header nav ul {
     display: flex;
-    gap: 26px;
+    height: 100%;
 }
 
 header nav li {
-    display: inline-block;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 13px;
 }
 
-header button {
-    color: white;
-    padding: 6px 10px;
-    background-color: #0061ff;
-    margin-left: 13px;
+.menu:hover {
+    border-bottom: 2px solid #081753;
+    border-top: 2px solid transparent;
 }
 
 /* Stili per il menu di navigazione */
@@ -170,6 +189,198 @@ header .destra {
 /* ==========================
    Sezione piani offerte
    ========================== */
+
+main section .contenitore {
+    width: 658px;
+}
+
+form {
+    display: flex;
+}
+
+form>* {
+    font-size: inherit;
+}
+
+form>*:hover {
+    cursor: pointer;
+}
+
+label {
+    margin-right: 33px;
+    margin-left: 3px;
+}
+
+main section .colonne {
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 33px;
+}
+
+.colonne .colonna {
+    border: 1px solid #d0d0d3;
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 64px) / 3);
+}
+
+.colonne .colonna>* {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.colonna div:first-child {
+    border-bottom: 1px solid #d0d0d3;
+    padding: 8px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.colonne .colonna:last-child {
+    width: 100%;
+}
+
+.colonne .colonna .contenitore {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    margin: 0;
+}
+
+.colonne .colonna .sinistra {
+    width: 70%;
+    text-align: left;
+    border: none;
+}
+
+.sinistra h4 {
+    margin: 0;
+}
+
+.sinistra p {
+    margin-top: 36px;
+}
+
+.colonne .destra {
+    width: 30%;
+}
+
+.colonne .colonna .destra button {
+    margin: 0;
+    width: 100%;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+h5 {
+    font-size: 10.24px;
+    margin-top: 17px;
+}
+
+h6 {
+    font-size: 10.24px;
+    margin-top: 13px;
+    color: #464646;
+    font-weight: 500;
+}
+
+ol {
+    margin-top: 37px;
+}
+
+.colonne .colonna button {
+    margin-top: 35px;
+    margin-bottom: 24px;
+}
+
+main a {
+    color: #0061ff;
+    text-decoration: underline;
+}
+
+.colonna hr {
+    margin-top: 27px;
+    margin-bottom: 17px;
+}
+
+.colonne .colonna ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+
+.colonne .colonna li {
+    position: relative;
+    margin-left: 12px;
+}
+
+.colonne .colonna ul li::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    color: #0061ff;
+    margin-left: -12px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.utente::before {
+    content: "\f007";
+    font-family: FontAwesome;
+    margin-left: -12px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.cartella::before {
+    content: "\f07b";
+    font-family: FontAwesome;
+    margin-left: -12px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.condividi::before {
+    content: "\f1e0";
+    font-family: FontAwesome;
+    margin-left: -12px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.partner {
+    margin-top: 100px;
+    display: flex
+}
+
+.partner .colonna {
+    width: 50%;
+}
+
+.partner .destra {
+    padding: 33px;
+}
+
+.partner .destra p {
+    margin-top: 13px;
+}
+
+.partner .destra button {
+    background-color: transparent;
+    color: #0061ff;
+    border: 1px solid currentColor;
+    margin-top: 23px;
+}
+
 /* Stili per sezione piani offerte */
 
 /* ==========================
