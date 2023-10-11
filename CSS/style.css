@@ -82,9 +82,6 @@ button:hover {
 /* ==========================
    Header
    ========================== */
-header {
-    padding-bottom: 108px;
-}
 
 /* ==========================
    Navigazione
@@ -92,6 +89,7 @@ header {
 
 header nav {
     height: 53px;
+    line-height: 53px;
     display: flex;
     justify-content: space-between;
     color: #464646;
@@ -102,6 +100,7 @@ header nav {
     right: 0;
     z-index: 99;
     background-color: white;
+    box-shadow: rgb(222, 222, 222) 0px 1px 2px;
 }
 
 header nav>div {
@@ -136,13 +135,18 @@ header nav li {
 /* ==========================
    Jumbotron
    ========================== */
+#jumbotron {
+    padding-bottom: 108px;
+    width: 100%;
+}
+
 #sfondo {
     margin-top: 53px;
     padding-bottom: 15px;
     background-color: #b4d0e7;
 }
 
-header .contenitore {
+#jumbotron .contenitore {
     width: 790px;
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +161,7 @@ h1 {
     margin-bottom: 45px;
 }
 
-header .sinistra {
+#jumbotron .sinistra {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -174,7 +178,7 @@ header .sinistra {
     font-size: 30px;
 }
 
-header .destra {
+#jumbotron .destra {
     width: 70%;
 }
 
@@ -198,22 +202,45 @@ main section .contenitore {
     width: 658px;
 }
 
+/* ==========================
+   Radio Button
+   ========================== */
+
 form {
     display: flex;
 }
 
-form>* {
-    font-size: inherit;
-}
-
-form>*:hover {
-    cursor: pointer;
+input[type="radio"] {
+    display: none;
 }
 
 label {
+    font-size: inherit;
     margin-right: 33px;
     margin-left: 3px;
 }
+
+label:hover {
+    cursor: pointer;
+}
+
+label::before {
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    color: black;
+    margin-right: 3px;
+}
+
+input[type="radio"]:checked+label::before {
+    content: "\f192";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #0061ff;
+    margin-right: 3px;
+}
+
+/* Radio Button */
 
 main section .colonne {
     gap: 32px;
@@ -320,45 +347,32 @@ main a {
 }
 
 .colonne .colonna li {
-    position: relative;
-    margin-left: 12px;
+    text-indent: -12px;
 }
 
 .colonne .colonna ul li::before {
     content: "\f00c";
     font-family: FontAwesome;
     color: #0061ff;
-    margin-left: -12px;
-    position: absolute;
-    left: 0;
-    top: 2px;
+    margin-right: 3px;
 }
 
 .utente::before {
     content: "\f007";
     font-family: FontAwesome;
-    margin-left: -12px;
-    position: absolute;
-    left: 0;
-    top: 2px;
+    margin-right: 3px;
 }
 
 .cartella::before {
     content: "\f07b";
     font-family: FontAwesome;
-    margin-left: -12px;
-    position: absolute;
-    left: 0;
-    top: 2px;
+    margin-right: 3px;
 }
 
 .condividi::before {
     content: "\f1e0";
     font-family: FontAwesome;
-    margin-left: -12px;
-    position: absolute;
-    left: 0;
-    top: 2px;
+    margin-right: 3px;
 }
 
 .partner {
@@ -380,7 +394,7 @@ main a {
 
 .partner .destra button {
     background-color: transparent;
-    color: #0061ff;
+    color: black;
     border: 1px solid currentColor;
     margin-top: 23px;
 }
@@ -446,7 +460,7 @@ main a {
 #companies {
     display: flex;
     width: 100%;
-    height: 60vh;
+    height: calc(100vw / 3);
     margin: 0 auto;
 }
 
