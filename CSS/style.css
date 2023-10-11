@@ -132,16 +132,24 @@ header nav li {
 
 /* Stili per il menu di navigazione */
 
+/* Stili per l'header del sito */
+
+/* ==========================
+   Contenuto Principale
+   ========================== */
+main {
+    margin-top: 53px;
+    margin-bottom: 100px;
+}
+
 /* ==========================
    Jumbotron
    ========================== */
 #jumbotron {
-    padding-bottom: 108px;
     width: 100%;
 }
 
 #sfondo {
-    margin-top: 53px;
     padding-bottom: 15px;
     background-color: #b4d0e7;
 }
@@ -184,18 +192,16 @@ h1 {
 
 /* Stili per il Jumbotron */
 
-/* Stili per l'header del sito */
-
-/* ==========================
-   Contenuto Principale
-   ========================== */
-
 /* ==========================
    Sezione piani offerte
    ========================== */
 section {
     width: 658px;
     margin: 0 auto;
+}
+
+#offerte {
+    margin-top: 108px;
 }
 
 main section .contenitore {
@@ -573,7 +579,7 @@ main a {
    ========================== */
 
 #domande {
-    padding: 100px 0;
+    margin-top: 100px;
 }
 
 #domande .contenitore {
