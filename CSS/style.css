@@ -69,7 +69,7 @@ hr {
 }
 
 h3 {
-    font-size: 31.25px;
+    font-size: 25px;
     margin-bottom: 42px;
 }
 
@@ -234,7 +234,7 @@ main section .colonne {
     margin-right: 20px;
 }
 
-.colonna div:first-child {
+.colonna .icona {
     border-bottom: 1px solid #d0d0d3;
     padding: 8px 0;
     margin: 0;
@@ -414,11 +414,205 @@ main a {
 /* ==========================
    Sezione clienti
    ========================== */
+
+/* ==========================
+   Intestazione clienti
+   ========================== */
+
+#clienti {
+    width: 100%;
+    margin-top: 140px;
+}
+
+#clienti>.contenitore {
+    margin-bottom: 100px;
+}
+
+
+#clienti>.contenitore h3 {
+    width: 70%;
+}
+
+#clienti a {
+    margin-top: 42px;
+}
+
+/* Intestazione clienti */
+
+/* ==========================
+   Loghi clienti
+   ========================== */
+
+#companies {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+}
+
+#companies .colonna {
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#companies .colonna .logo {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#companies .colonna .logo img {
+    filter: invert(1);
+}
+
+#companies .colonna img {
+    width: 50%;
+}
+
+#designit {
+    background-color: #a2d39b;
+    border: 10px solid #d1e9cd;
+}
+
+#arizona {
+    background-color: #61082b;
+}
+
+#florida {
+    background-color: #0093ce;
+}
+
+#topps {
+    background-color: #ff1c1c;
+}
+
+#bicycle {
+    background-color: #d5001f;
+}
+
+#hearts {
+    background-color: #b4d0e7;
+}
+
+#lonely {
+    background-color: #0d2481;
+}
+
+#outdoor {
+    background-color: #ffd830;
+}
+
+#centrale {
+    padding: 33px;
+    background-color: #f5f5f5;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+#centrale hr {
+    margin: 28px 50% 28px 0;
+    margin-right: 50%;
+    height: 1px;
+}
+
+#centrale p {
+    margin-bottom: 36px;
+}
+
+/* Loghi clienti */
+
+/* ==========================
+   Business clienti
+   ========================== */
+#clienti .sfondo {
+    padding: 88px 0;
+    background-color: #b4d0e7;
+}
+
+#clienti .sfondo .contenitore {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sfondo h3 {
+    width: 50%;
+    color: #61082b;
+    margin: 0;
+}
+
+.sfondo button {
+    width: 30%;
+    background-color: white;
+    color: #0061ff;
+}
+
+/* Business clienti */
+
 /* Stili per sezione clienti */
 
 /* ==========================
    Sezione domande frequenti
    ========================== */
+
+#domande {
+    padding: 100px 0;
+}
+
+#domande .contenitore {
+    margin-top: 8px;
+}
+
+#domande .contenitore .box {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#domande .contenitore .box .riga {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 28px;
+    padding-left: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.box .riga:first-child {
+    margin-bottom: -1px;
+}
+
+.box .riga:last-child {
+    margin-top: -1px;
+}
+
+#domande .contenitore .box .riga:hover p {
+    display: inline-block;
+}
+
+#domande .contenitore .box .riga:hover i {
+    transform: rotate(180deg);
+}
+
+#domande .contenitore .box .riga h5 {
+    margin: 0;
+}
+
+#domande .contenitore .box .riga i {
+    font-weight: 600;
+    line-height: 14.22px;
+}
+
+#domande .contenitore .box .riga p {
+    width: 100%;
+    margin-top: 28px;
+    display: none;
+}
+
 /* Stili per sezione domande frequenti */
 
 /* Stili per il contenuto principale della pagina */
@@ -426,4 +620,52 @@ main a {
 /* ==========================
    Footer
    ========================== */
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 72px;
+    padding-bottom: 33px;
+}
+
+footer .contenitore {
+    width: 790px;
+}
+
+footer .contenitore:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .contenitore .colonna ul {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+footer hr {
+    margin-top: 76px;
+    margin-bottom: 56px;
+    width: 10%;
+}
+
+#lingua {
+    color: #999999;
+}
+
+#lingua::before {
+    content: "\f57d";
+    font-family: FontAwesome;
+    margin-right: 6px;
+    color: currentColor;
+}
+
+#lingua::after {
+    content: "\f0de";
+    font-family: FontAwesome;
+    margin-left: 3px;
+    color: currentColor;
+    vertical-align: -webkit-baseline-middle;
+}
+
 /* Stili per il piè di pagina del sito */
