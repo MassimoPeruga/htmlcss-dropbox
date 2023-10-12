@@ -354,6 +354,7 @@ main a {
 
 .colonne .colonna li {
     text-indent: -12px;
+    margin-left: 12px;
 }
 
 .colonne .colonna ul li::before {
